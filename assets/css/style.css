@@ -12,20 +12,20 @@ img {
 	max-width: 100%;
 }
 
-a:hover,
+/*a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
 	color: #ffffff;
 }
-
+*/
 ul,
 ol {
 	padding: 0;
 	margin: 0;
 }
 
-h2 {
+.h2 {
 	color: #bfd645;
 	font-size: 30px;
 	font-weight: 700;
@@ -373,7 +373,7 @@ h2 {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: 40px;
 }
 
 .h4 {
@@ -388,12 +388,30 @@ h2 {
 	background-color: #89DEC6;
 }
 
+.btn-green {
+	background-color: #89DEC6;
+	color: black;
+}
+
+.btn-green:hover {
+	background-color: #6DBAA4;
+	color: white;
+}
+
 .fs-50 {
 	font-size: 50px;
 }
 
 .fs-16 {
 	font-size: 16px;
+}
+
+.fs-40 {
+	font-size: 40px;
+}
+
+.mt-80 {
+	margin-top: 80px;
 }
 
 .z-index-min-9999 {

@@ -21,7 +21,7 @@
 <body>
 
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-transparent animate__animated animate__fadeIn">
+    <nav class="navbar navbar-expand-lg bg-transparent animate__animated animate__fadeIn fixed-top">
     <div class="container my-4">
       <a class="navbar-brand disabled me-5" href="#"><img src="assets/img/navbar.png" width="50px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,29 +30,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Feature
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a class="nav-link active" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a
-                class="nav-link"
-                href="https://wa.me/6289690505143"
-                target="_blank"
-                >Contact Us</a
-              >
+            <a class="nav-link active" href="#feature">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://wa.me/6289690505143" target="_blank">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -61,16 +54,16 @@
 
   <!-- <div class="position-absolute top-0 start-0 z-index-min-9999"><img src="assets/img/g9.png" width="210px"></div> -->
 
-  <div class="container">
+  <div class="container mt-5 pt-5" id="home">
     <div class="row justify-content-center">
         <div class="col-6 lh-sm">
           <div class="fw-bold text-green fs-50 mt-5 pt-5 animate__animated animate__backInLeft animate__faster 500ms">ASY-SYIFA</div>
           <div class="fw-bold text-green fs-50 animate__animated animate__backInLeft animate__fast 800ms">TONIK APEL</div>
 
-          <p class="mt-3 fs-16 animate__animated animate__backInLeft lh-sm" style="font-size: 16px">Tonik Apel "Asy-Syifa" merupakan sebuah minuman olahan dari buah apel segar menjadi cuka apel (apple cider venigar). Melalui proses fermentasi, kandungan nutrisi buah apel menjadi bertambah kaya terutama enzim dan asam amino yang memberikan khasiat penyembuhan.</p>
+          <p class="mt-3 fs-16 animate__animated animate__backInLeft lh-base" style="font-size: 16px">Tonik Apel "Asy-Syifa" merupakan sebuah minuman olahan dari buah apel segar menjadi cuka apel (apple cider venigar). Melalui proses fermentasi, kandungan nutrisi buah apel menjadi bertambah kaya terutama enzim dan asam amino yang memberikan khasiat penyembuhan.</p>
           
           <div class="col-4">
-            <button type="button" class="btn bg-green fw-bold mt-3 shadow-sm rounded-pill w-100 animate__animated animate__backInLeft animate__slow 2s">Get Started</button>
+            <a href="#about" class="btn bg-green fw-bold mt-3 shadow-sm rounded-pill w-100 animate__animated animate__backInLeft animate__slow 2s">Get Started</a>
           </div>
           
         </div>
@@ -84,13 +77,16 @@
   
 </div>
   <div class="container" id="about" style="padding-top: 100px; padding-bottom:100px;">
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-6 animate__animated animate__slideInLeft">
-          <img src="https://images.unsplash.com/photo-1599229526921-4f29d42b0b41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0ZXJmcm9udHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="img-thumbnail img-fluid rounded-circle" alt="500x500" style="width: 550px; height: 550px;">
+          <img src="https://images.unsplash.com/photo-1599229526921-4f29d42b0b41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0ZXJmcm9udHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="img-thumbnail img-fluid rounded-circle" alt="500x500" style="width: 400px; height: 400px;">
         </div>
         <div class="col-md-5 order-md-2 align-self-center animate__animated animate__slideInRight">
-          <h2 style="font-family: Poppins;"><b>Tentang Kami</b></h2>
-          <p class="lead" style="font-family: sans-serif;">Tonik Apel "Asy-Syifa" merupakan sebuah minuman olahan dari buah apel segar menjadi
+          <div class="text-black fs-40 fw-bold text-center">About</div>
+          	<div class="d-flex justify-content-center">
+		    	<hr class="bg-black m-0 mb-3" size="5px" width="100px" style="background-color: #fff; opacity: 1">
+			</div>
+          <p class="lead mt-3 lh-base fs-16">Tonik Apel "Asy-Syifa" merupakan sebuah minuman olahan dari buah apel segar menjadi
             cuka apel (apple cider venigar). Melalui proses fermentasi, kandungan nutrisi buah apel menjadi
             bertambah kaya terutama enzim dan asam amino yang memberikan khasiat penyembuhan.</p>
         </div>
@@ -98,12 +94,12 @@
     </div>
 
     <div class="container pt-5" id="feature">
-      <div
-        class="text-center fw-bold"
-        style="font-size: 40px; font-family: Poppins"
-      >
+      <div class="text-center fw-bold fs-40 mt-80">
         Feature
       </div>
+      <div class="d-flex justify-content-center">
+		    <hr class="bg-black m-0 mb-3" size="5px" width="120px" style="background-color: #fff; opacity: 1">
+		</div>
     </div>
     <div class="container" style="padding-top: 30px; padding-bottom: 100px">
       <div class="row">
@@ -168,12 +164,10 @@
     </div>
 
     <div class="container pt-5" id="service">
-      <div
-        class="text-center fw-bold"
-        style="font-size: 40px; font-family: Poppins; padding-top: 10px"
-      >
-        Service
-      </div>
+      <div class="text-center fw-bold fs-40 mt-80">Service</div>
+      	<div class="d-flex justify-content-center">
+		    <hr class="bg-black m-0 mb-3" size="5px" width="120px" style="background-color: #fff; opacity: 1">
+		</div>
     </div>
     <div class="container" style="padding-top: 30px; padding-bottom: 100px">
       <div class="row">
@@ -240,36 +234,37 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title">
-            <h2>Best Product</h2>
-          </div>
+          <div class="text-center fw-bold fs-40 mt-80">Best Product</div>
+	      	<div class="d-flex justify-content-center">
+			    <hr class="bg-black m-0 mb-5" size="5px" width="160px" style="background-color: #fff; opacity: 1">
+			</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-2">
         <div class="categories__slider owl-carousel">
           <div class="col-lg-11">
             <div class="categories__item set-bg" data-setbg="https://via.placeholder.com/400x400">
-              <h5><a href="#">Product 1</a></h5>
+              <h5><a href="#" class="btn btn-green">Product 1</a></h5>
             </div>
           </div>
           <div class="col-lg-11">
             <div class="categories__item set-bg" data-setbg="https://via.placeholder.com/400x400">
-              <h5><a href="#">Product 2</a></h5>
+              <h5><a href="#" class="btn btn-green">Product 2</a></h5>
             </div>
           </div>
           <div class="col-lg-11">
             <div class="categories__item set-bg" data-setbg="https://via.placeholder.com/400x400">
-              <h5><a href="#">Product 3</a></h5>
+              <h5><a href="#" class="btn btn-green">Product 3</a></h5>
             </div>
           </div>
           <div class="col-lg-11">
             <div class="categories__item set-bg" data-setbg="https://via.placeholder.com/400x400">
-              <h5><a href="#">Product 4</a></h5>
+              <h5><a href="#" class="btn btn-green">Product 4</a></h5>
             </div>
           </div>
           <div class="col-lg-11">
             <div class="categories__item set-bg" data-setbg="https://via.placeholder.com/400x400">
-              <h5><a href="#">Product 4</a></h5>
+              <h5><a href="#" class="btn btn-green">Product 4</a></h5>
             </div>
           </div>
         </div>
@@ -279,12 +274,10 @@
 
   <div class="container">
     <div class="container pt-5" id="product">
-      <div
-        class="text-center fw-bold"
-        style="font-size: 40px; font-family: Poppins"
-      >
-        Product
-      </div>
+      <div class="text-center fw-bold fs-40 mt-80">Product</div>
+      	<div class="d-flex justify-content-center">
+		    <hr class="bg-black m-0 mb-3" size="5px" width="120px" style="background-color: #fff; opacity: 1">
+		</div>
     </div>
     <div class="container" style="padding-top: 30px; padding-bottom: 100px">
       <div class="row">
@@ -302,7 +295,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample1"
@@ -399,7 +392,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample2"
@@ -496,7 +489,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample3"
@@ -593,7 +586,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample4"
@@ -690,7 +683,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample5"
@@ -787,7 +780,7 @@
             </div>
             <p class="text-center">
               <button
-                class="btn btn-primary btn-sm"
+                class="btn btn-green btn-sm"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample6"
@@ -880,9 +873,10 @@
   <section class="benefit">
     <div class="container">
       <h2 class="mt-5"><span>Keunggulan dari <strong>Tonik Apel "Asy-Syifa"</strong></span></h2>
-      <div class="section-title">
-        <h4>apple cider venigar</h4>
-      </div>
+      	<div class="text-center fw-bold fs-3 mt-4">apple cider venigar</div>
+	      	<div class="d-flex justify-content-center">
+			    <hr class="bg-black m-0 mb-5" size="5px" width="200px" style="background-color: #fff; opacity: 1">
+			</div>
       <div class="row block-inline">
         <div class="col-md-4 pt-50">
           <div class="left">
@@ -935,14 +929,14 @@
         </div>
       </div>
       <div class="about-wrap">
-        <h2 class="font-3 fsz-35 mt-3">Live Organic Live Healthy</h2>
+        <h2 class="font-3 fsz-35 mt-3 text-center">Live Organic Live Healthy</h2>
       </div>
     </div>
   </section>
 </div>
 
 <div class="container">
-	<img class="img" src="assets/img/mapsbaru.png" width:10px>
+	<img class="img mt-5" src="assets/img/mapsbaru.png" width:10px>
         
         
         <h4 class="alamat fs-6 text-center"> Dusun Bengkaras RT. 07 RW.03 Desa Mediredo,
